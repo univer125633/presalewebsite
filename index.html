@@ -227,6 +227,38 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="progress-container">
+  <div class="progress-bar"></div>
+</div>
+
+<button onclick="updateProgressBar()">Update Progress Bar</button>
+
+<script>
+  function updateProgressBar() {
+    // 获取进度条元素
+    const progressBar = document.querySelector('.progress-bar');
+    
+    // 获取当前进度百分比
+    const currentProgress = parseFloat(prompt('Enter current progress (0-100):'));
+    
+    // 更新进度条宽度
+    progressBar.style.width = `${currentProgress}%`;
+  }
+</script>
+
+<style>
+  .progress-container {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  .progress-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #4caf50;
+  }
+</style>
+
             </div></div></section>
             <section class="nx">
                 <div class="tcontainern">
